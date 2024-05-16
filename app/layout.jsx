@@ -1,7 +1,8 @@
-import {  Titillium_Web,Old_Standard_TT,  } from 'next/font/google'
+import { Titillium_Web, Old_Standard_TT } from 'next/font/google'
 
 import './globals.css'
 import Header from './components/Header'
+
 
 const oldStandard = Old_Standard_TT({ subsets: ['latin'], weight: '400' })
 const titilliumWeb = Titillium_Web({ subsets: ['latin'], weight: '300' })
@@ -17,7 +18,6 @@ export default function RootLayout({ children }) {
 		<html lang='pl'>
 			<body className={titilliumWeb.className}>
 				<Header />
-				
 				{children}
 			</body>
 		</html>
