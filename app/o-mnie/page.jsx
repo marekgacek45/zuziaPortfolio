@@ -1,11 +1,11 @@
-'use client'
+// 'use client'
 
 import React from 'react'
 import Link from 'next/link'
 
 
-import { motion } from 'framer-motion'
-import { transition } from '../transition'
+// import { motion } from 'framer-motion'
+// import { transition } from '../transition'
 
 import Footer from '../components/Footer'
 
@@ -13,23 +13,14 @@ export default function About() {
 
 	return (
 		<>
-			<motion.main
-			 
-				initial={{ opacity: 0,  }}
-				animate={{ opacity: 1,  }}
-				exit={{ opacity: 0,  }}
-				transition={transition}
-				className=''>
+			<main className=''>
 				{/* container */}
 				<div className='flex flex-col justify-center items-center pt-[120px] md:pt-[150px] gap-24  max-w-screen-xl mx-auto px-10'>
 					{/* FIRST */}
 					<div className='about-box '>
 						{/* text */}
-						<motion.div
-							initial={{ opacity: 0, y:'-80%' }}
-							animate={{ opacity: 1,y:0 }}
-							exit={{ opacity: 0,y:'-80%' }}
-							transition={transition}
+						<div
+							
 						className='about-box-text order-1 md:order-none '>
 							<h2 className=' heading'>O mnie</h2>
 							<div className='space-y-6 max-w-sm'>
@@ -48,25 +39,23 @@ export default function About() {
 									tych obszarów, jestem otwarta na nowe.
 								</p>
 							</div>
-						</motion.div>
+						</div>
 
 						{/* img */}
-						<motion.div initial={{ scale: .5 }}
-				animate={{ scale: 1 }}
-				exit={{ scale: 0 }}
-				transition={transition} className='md:w-1/2 max-h-[600px]'>
+						<div
+				
+				className='md:w-1/2 max-h-[600px]'>
 							<img src='/img/home.jpg' alt='' className='about-box-img' />
-						</motion.div>
+						</div>
 					</div>
 					{/* SECOND */}
 					<div className='about-box '>
 						{/* img */}
-						<motion.div initial={{ scale: .5 }}
-				animate={{ scale: 1 }}
-				exit={{ scale: 0 }}
-				transition={transition}  className='md:w-1/2 max-h-[600px] '>
+						<div
+						
+				 className='md:w-1/2 max-h-[600px] '>
 							<img src='/img/home.jpg' alt='' className='about-box-img' />
-						</motion.div>
+						</div>
 						{/* text */}
 						<div className='about-box-text '>
 							<div className='space-y-6 max-w-sm'>
@@ -91,7 +80,7 @@ export default function About() {
 						</div>
 					</div>
 				</div>
-			</motion.main>
+			</main>
 			<Footer />
 		</>
 	)
