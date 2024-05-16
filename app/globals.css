@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body{
-  @apply bg-primary text-secondary overflow-x-hidden
+  @apply bg-primary-400 text-secondary overflow-x-hidden
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -27,8 +27,27 @@ h1,h2,h3,h4,h5,h6{
 
 /* HEADER */
 
-.nav-link{
-  @apply  hover:text-third duration-500 
+.link{
+  @apply  hover:text-third duration-500  relative
+}
+
+.link::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  border-radius: 4px;
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .3s ease-in-out;
+  @apply bg-third
+}
+
+.link:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
 }
 
 .social-link{

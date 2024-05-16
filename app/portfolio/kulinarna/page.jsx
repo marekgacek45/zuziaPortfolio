@@ -1,8 +1,10 @@
 'use client'
 
 import React, { useState } from 'react'
+import Link from 'next/link'
 
 import LightGallery from 'lightgallery/react'
+
 
 // import styles
 import 'lightgallery/css/lightgallery.css'
@@ -30,7 +32,7 @@ export default function Culinary() {
 					{/* left */}
 					<div className='w-full lg:w-2/5 h-[80vh] lg:h-full relative'>
 						<div className="bg-[url('/img/home.jpg')] h-full w-[60%] sm:w-3/4 bg-center bg-fixed bg-cover"></div>
-						<h2 className='heading absolute top-1/2  transform -translate-y-1/2 right-20'>
+						<h2 className='heading absolute top-1/2  transform -translate-y-1/2 right-0 xs:right-5 sm:right-20 lg:right-0'>
 							ku
 							<br />
 							li <br />
