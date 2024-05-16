@@ -1,16 +1,19 @@
 import React from 'react'
 import Link from 'next/link'
 
+import Footer from '../components/Footer'
+
 export default function About() {
 	return (
-		<main className='main'>
+		<>
+		<main className=''>
 			{/* container */}
-			<div className='flex flex-col justify-center items-center pt-[200px] gap-24  max-w-screen-lg mx-auto'>
+			<div className='flex flex-col justify-center items-center pt-[120px] md:pt-[150px] gap-24  max-w-screen-xl mx-auto px-10'>
 				{/* FIRST */}
-				<div className='flex  justify-center  '>
+				<div className='about-box '>
 					{/* text */}
-					<div className='flex-1 pt-36 pb-14 lg:pt-0 lg:w-auto z-10 flex flex-col justify-center items-center lg:items-start'>
-						<h2 className='heading'>O mnie</h2>
+					<div className='about-box-text order-1 md:order-none '>
+						<h2 className=' heading'>O mnie</h2>
 						<div className='space-y-6 max-w-sm'>
 							<p className='text-2xl '>
 								Hej! Mam na imię Zuzanna <br></br>
@@ -30,18 +33,18 @@ export default function About() {
 					</div>
 
 					{/* img */}
-					<div className='w-1/2 max-h-[500px] '>
-						<img src='/img/home.jpg' alt='' className='h-full w-full object-cover' />
+					<div className='md:w-1/2 max-h-[600px]'>
+						<img src='/img/home.jpg' alt='' className='about-box-img' />
 					</div>
 				</div>
 				{/* SECOND */}
-				<div className='flex  justify-center '>
+				<div className='about-box '>
 					{/* img */}
-					<div className='w-1/2 max-h-[500px] '>
-						<img src='/img/home.jpg' alt='' className='h-full w-full object-cover' />
+					<div className='md:w-1/2 max-h-[600px] '>
+						<img src='/img/home.jpg' alt='' className='about-box-img' />
 					</div>
 					{/* text */}
-					<div className='flex-1 pt-36 pb-14 lg:pt-0 lg:w-auto z-10 flex flex-col justify-center items-center lg:items-start ml-24'>
+					<div className='about-box-text '>
                     <div className='space-y-6 max-w-sm'>
 							<p>
                             Lubię uwydatniać emocje i historię płynącą z każdego człowieka, z każdej chwili, gry światła czy ruchu.<br/>
@@ -59,5 +62,7 @@ Portfolio						</Link>
 				</div>
 			</div>
 		</main>
+		<Footer/>
+		</>
 	)
 }

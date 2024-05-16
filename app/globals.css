@@ -34,3 +34,18 @@ h1,h2,h3,h4,h5,h6{
 .social-link{
   @apply w-6 hover:scale-110 duration-500
 }
+
+
+/* ABOUT */
+
+.about-box{
+  @apply flex flex-col md:flex-row  justify-center gap-12 lg:gap-6 
+}
+
+.about-box-text{
+  @apply flex-1  md:pt-0 md:w-auto z-10 flex flex-col justify-center items-start lg:ml-10 xl:ml-20
+}
+
+.about-box-img{
+  @apply max-h-[500px] md:max-h-full w-full object-cover
+}
