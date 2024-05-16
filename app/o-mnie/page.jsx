@@ -52,7 +52,7 @@ export default function About() {
 							</p>
 						
 							<p>
-							Uważam, że nie ma czegoś takiego jak 'nie fotogeniczność' i staram się to udowadniać tworząc portrety, w których <strong className='font-semibold'>skupiam się na pięknie każdego z nas.</strong>
+							Uważam, że nie ma czegoś takiego jak &quotnie fotogeniczność&quot i staram się to udowadniać tworząc portrety, w których <strong className='font-semibold'>skupiam się na pięknie każdego z nas.</strong>
 							</p>
 						</div>
 
