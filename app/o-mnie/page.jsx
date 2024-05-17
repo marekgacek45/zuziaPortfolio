@@ -65,7 +65,7 @@ export default function About() {
 							</p>
 						</div>
 
-						<LinkBtn linkAttributes={{ href: '/portfolio' }}>Portfolio</LinkBtn>
+						<LinkBtn href="/portfolio">Portfolio</LinkBtn>
 					</AboutSection>
 				</div>
 			</main>
