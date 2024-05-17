@@ -10,9 +10,9 @@ import Footer from '../components/Footer'
 export default function About() {
 	return (
 		<>
-			<main className='pt-28 2xl:pt-40 pb-12 md:pb-20'>
+			<main className='main'>
 				{/* container */}
-				<div className='flex flex-col justify-center items-center gap-12  md:gap-24  max-w-screen-xl mx-auto px-10'>
+				<div className='flex flex-col justify-center items-center gap-12  md:gap-24 max-w-screen-xl  mx-auto px-10 '>
 					{/* FIRST */}
 					<AboutSection
 						order={'order-1 md:order-none'}

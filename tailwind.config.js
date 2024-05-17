@@ -9,6 +9,7 @@ module.exports = {
 		extend: {
 			screens: {
 				xs: '390px',
+				mobile:'500px',
 				max: '1920px',
 			},
 			fontFamily: {

@@ -16,12 +16,16 @@ h1,h2,h3,h4,h5,h6{
   @apply text-[50px] sm:text-[54px] md:text-[80px] lg:text-[108px]  font-bold capitalize leading-[120%] tracking-[-0.05em] mb-2;
 }
 
+.heading--portfolio{
+  @apply text-[60px] sm:text-[96px]  md:text-[108px]   leading-[120%] tracking-[-0.05em]
+}
+
 .img-hover{
   @apply hover:scale-105 duration-500
 }
 
 .main{
-  @apply h-screen w-screen
+  @apply pt-28 2xl:pt-40 pb-12 md:pb-20
 }
 
 .btn {

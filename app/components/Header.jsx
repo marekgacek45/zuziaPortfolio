@@ -26,7 +26,7 @@ export default function Header() {
 	  }, []);
 
 	return (
-		<header className={`fixed w-full px-4 xs:px-6 md:px-12 lg:px-24 z-50 py-4 lg:py-6 flex items-center transition-colors duration-500 ${isScrolled ? 'bg-primary-100' : ''}`}>
+		<header className={`fixed w-full px-4 xs:px-6 md:px-12 lg:px-24 z-50 py-6 flex items-center transition-colors duration-500 ${isScrolled ? 'bg-primary-100' : ''}`}>
 			<div className='flex flex-col lg:flex-row lg:items-center w-full justify-between'>
 				<Link href='/'>
 					<h1 className=' text-4xl'>Zuzanna Matyja</h1>
