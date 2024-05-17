@@ -19,7 +19,7 @@ import 'lightgallery/scss/lg-zoom.scss'
 import lgThumbnail from 'lightgallery/plugins/thumbnail'
 import lgZoom from 'lightgallery/plugins/zoom'
 
-import Footer from '@/app/components/Footer'
+import Footer from '../../components/Footer'
 
 export default function Culinary() {
 	const [toggler, setToggler] = useState(false)

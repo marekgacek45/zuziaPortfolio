@@ -10,7 +10,7 @@ export default function Home() {
 		<main
 		
 		
-			className=' lg:h-screen overflow-hidden'>
+			className=' lg:h-screen overflow-hidden fade-in'>
 			{/* container */}
 			<div className='flex flex-col justify-center items-center pt-[110px] lg:pt-0 lg:flex-row mx-auto gap-6 lg:gap-0'>
 				{/* text */}
