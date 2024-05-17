@@ -1,85 +1,91 @@
 'use client'
 
-import React from 'react'
+import React, { useState } from 'react'
 import Link from 'next/link'
-import { useState, useEffect } from 'react'
-// npm install react-hook-form @web3forms/react
-import { useForm } from 'react-hook-form'
-import useWeb3Forms from '@web3forms/react'
+import Footer from '../components/Footer'
 
 export default function Contact() {
+	const [result, setResult] = useState('')
+	const [sendingForm, setSendingForm] = useState(false)
+
 	async function handleSubmit(event) {
-		event.preventDefault();
-		const formData = new FormData(event.target);
+		event.preventDefault()
+		setSendingForm(true)
+		setResult('Wysyłam....')
+		const formData = new FormData(event.target)
 
-		formData.append("access_key", "2ce45a9e-19e6-4edf-abd9-c3ca8f5dc7f1");
+		formData.append('access_key', 'd362bf7b-1ea4-4a1f-86e7-4a76a3c7e7ad')
 
-		const object = Object.fromEntries(formData);
-		const json = JSON.stringify(object);
+		const object = Object.fromEntries(formData)
+		const json = JSON.stringify(object)
 
-		const response = await fetch("https://api.web3forms.com/submit", {
-			method: "POST",
+		const response = await fetch('https://api.web3forms.com/submit', {
+			method: 'POST',
 			headers: {
-			  "Content-Type": "application/json",
-			  Accept: "application/json"
+				'Content-Type': 'application/json',
+				Accept: 'application/json',
 			},
-			body: json
-		});
-		const result = await response.json();
+			body: json,
+		})
+		const result = await response.json()
 		if (result.success) {
-			console.log(result);
+			event.target.reset()
+			setSendingForm(true)
+			setResult('Dzięki za wiadomość!')
 		}
 	}
 
 	return (
-		<main className=' lg:h-screen overflow-hidden'>
-			{/* container */}
-			<div className='flex flex-col justify-center items-center pt-[110px] lg:pt-0 lg:flex-row mx-auto gap-6 lg:gap-0'>
-				{/* text */}
-				<div className='w-1/2  flex justify-center mt-24'>
-					<div className='flex flex-col justify-center items-center lg:items-start'>
-						<h2 className='heading'>Kontakt</h2>
-						<p className='text-[26px lg:text-[36px] font-primary mb-4 lg:mb-[12px]'>
-							Chętnie odpowiem na Twoje pytania
-						</p>
+		<>
+			<main className='  md:h-[screen] overflow-hidden '>
+				{/* container */}
+				<div className='flex flex-col lg:flex-row justify-center items-center  gap-8 md:gap-24 lg:gap-0 pt-28 md:pt-32 lg:pt-0  mx-auto'>
+					{/* img */}
+					<div className='w-full lg:w-1/2 5 h-96 md:h-screen order-1 lg:order-none'>
+						<img
+							src='/img/home.jpg'
+							alt='moje zdjęcie'
+							width={1}
+							height={1}
+							className='w-full h-full xl:h-auto object-cover '
+						/>
+					</div>
 
-						<form onSubmit={handleSubmit} className='flex flex-col gap-y-4 pt-12'>
-							<div className='flex gap-x-10'>
-							{/* <input type="hidden" name="subject" value="Nowa wiadomość ze strony zuzannamatyja.pl"/> */}
-								<input
-									name='name'
-									type='text'
-									placeholder='Your name'
+					{/* text */}
+					<div className=' w-full lg:w-1/2  flex justify-center lg:mt-20 px-6 md:px-12 '>
+						<div className='flex flex-col justify-center items-center lg:items-start'>
+							<h2 className='heading'>Kontakt</h2>
+							<p className='text-[26px] lg:text-[36px] font-primary mb-4 lg:mb-[12px]'>
+								Chętnie odpowiem na Twoje pytania
+							</p>
+							{/* form */}
+							<form onSubmit={handleSubmit} className='flex flex-col gap-y-4 2xl:pt-12'>
+								<span className={`text-2xl font-bold uppercase ${sendingForm ? '' : 'hidden'}`}>{result}</span>
+								<input type='hidden' name='subject' value='Nowa wiadomość ze strony zuzannamatyja.pl' />
+								<div className='flex flex-wrap gap-x-10'>
+									<input name='name' type='text' placeholder='Imię i nazwisko' required className='form-input ' />
+									<input name='email' type='email' placeholder='Email' required className='form-input ' />
+								</div>
+
+								<textarea
+									name='message'
 									required
-									className='outline-none border-b border-b-secondary h-[60px] bg-transparent font-secondary w-full pl-3 placeholder:text-[#757879] '
-								/>
-								<input
-									name='email'
-									type='email'
-									placeholder='Your email'
-									required
-									className='outline-none border-b border-b-secondary h-[60px] bg-transparent font-secondary w-full pl-3 placeholder:text-[#757879] '
-								/>
-							</div>
-
-							<textarea
-								name='message'
-								required
-								className=' mt-10 outline-none border-b border-b-secondary min-h-[120px] max-h-[120px] bg-transparent font-secondary w-full pl-3 placeholder:text-[#757879]'
-								placeholder='Your message'></textarea>
-							<button type='submit' className=' mt-10 btn mb-[30px] mx-auto lg:mx-0 self-start'>
-								Wyślij
-							</button>
-						</form>
-
-						{/* <span>{result}</span> */}
+									className=' mt-10 min-h-[120px] max-h-[120px] form-input'
+									placeholder='Twoja wiadomość'></textarea>
+								<button
+									type='submit'
+									disabled={sendingForm}
+									className={`mt-6 sm:mt-12 xl:mt-6 py-4 px-12 bg-secondary  font-semibold uppercase text-white  duration-500 self-start ${
+										sendingForm ? 'cursor-not-allowed' : 'hover:bg-gray-700'
+									} `}>
+									Wyślij
+								</button>
+							</form>
+						</div>
 					</div>
 				</div>
-				{/* img */}
-				<div className='w-full lg:w-1/2  h-96 lg:h-screen '>
-					<img src='/img/home.jpg' alt='' className='w-full h-full xl:h-auto object-cover' />
-				</div>
-			</div>
-		</main>
+			</main>
+			<Footer />
+		</>
 	)
 }

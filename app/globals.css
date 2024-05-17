@@ -63,7 +63,7 @@ h1,h2,h3,h4,h5,h6{
   @apply w-6 hover:scale-110 duration-500
 }
 
-
+/* SCROLL BAR */
 ::-webkit-scrollbar {
 	width: 15px; /* szerokość paska przewijania */
   @apply duration-500
@@ -84,7 +84,9 @@ h1,h2,h3,h4,h5,h6{
   }
 
 
-
+.form-input{
+  @apply outline-none border-b border-b-secondary h-[60px] bg-transparent font-secondary w-full pl-3 placeholder:text-[#757879] focus:border-dashed
+}
 
 
 
