@@ -17,8 +17,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .heading--portfolio{
-  @apply text-[60px] sm:text-[96px]  md:text-[108px]   leading-[120%] tracking-[-0.05em]
-}
+  @apply text-[60px] sm:text-[96px]  md:text-[108px]   leading-[120%] tracking-[-0.05em] }
 
 .img-hover{
   @apply hover:scale-105 duration-500
@@ -65,20 +64,24 @@ h1,h2,h3,h4,h5,h6{
 }
 
 
-/* ABOUT */
-
-/* .about-box{
-  @apply flex flex-col md:flex-row  justify-center gap-12 lg:gap-6 
-}
-
-.about-box-text{
-  @apply flex-1  md:pt-0 md:w-auto z-10 flex flex-col justify-center items-start lg:ml-10 xl:ml-20
-}
-
-.about-box-img{
-  @apply max-h-[500px] md:max-h-full w-full object-cover
-} */
-
+::-webkit-scrollbar {
+	width: 15px; /* szerokość paska przewijania */
+  @apply duration-500
+  }
+  
+  ::-webkit-scrollbar-track {
+	@apply bg-white; 
+  }
+  
+  ::-webkit-scrollbar-thumb {
+   
+	@apply bg-gray-300;  
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+   
+	@apply bg-gray-400;
+  }
 
 
 
