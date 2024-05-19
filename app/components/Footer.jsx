@@ -1,12 +1,12 @@
 import React from 'react'
 import Link from 'next/link'
 
-export default function Footer() {
+export default function Footer({className}) {
 
 const currentYear = new Date().getFullYear()
 
   return (
-    <footer className='md:px-12  py-10  bg-primary-100'>
+    <footer className={`md:px-12  py-10  bg-primary-100 ${className} `}>
 <div className='flex flex-col md:flex-row gap-6 md:gap-0 justify-between items-center max-w-screen-xl mx-auto'>
 
         <div>

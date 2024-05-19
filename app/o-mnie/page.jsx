@@ -17,10 +17,10 @@ export default function About() {
 					<AboutSection
 						order={'order-1 md:order-none'}
 						imgAttributes={{
-							src: '/img/home.jpg',
-							alt: 'Opis obrazu',
-							width: 1,
-							height: 1,
+							src: '/img/zuzanna_matyja-o_mnie.webp',
+							alt: 'Zuzanna Matyja - fotografia i wideo',
+							width: 600,
+							height: 600,
 						}}>
 						<h2 className=' heading '>O mnie</h2>
 						<div className='space-y-6 max-w-sm'>
@@ -45,10 +45,10 @@ export default function About() {
 					<AboutSection
 						order={'order-1'}
 						imgAttributes={{
-							src: '/img/home.jpg',
-							alt: 'Opis obrazu',
-							width: 1,
-							height: 1,
+							src: '/img/zuzanna_matyja-o_mnie2.webp',
+							alt: 'Zuzanna Matyja - fotografia i wideo',
+							width: 600,
+							height: 600,
 						}}>
 						<div className='space-y-6 max-w-sm'>
 							<p>
