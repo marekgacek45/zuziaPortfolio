@@ -12,7 +12,7 @@ export default function Culinary() {
 	return (
 		<>
 			<main className='main '>
-				<PortfolioGallery bgi={"bg-[url('/img/home.jpg')]"}>
+				<PortfolioGallery bgi="bg-[url('/img/kulinarna/kulinarna-5.webp')]">
 					{{
 						heading: (
 							<>
@@ -26,34 +26,44 @@ export default function Culinary() {
 						gallery: (
 							<>
 								<PortfolioGalleryItem
-									imgThumb={'/img/kulinarna-1.jpg'}
-									imgBig={'/img/kulinarna-1.jpg'}
-									alt={'zdjęcie makaronu'}
+									imgThumb={'/img/kulinarna/kulinarna-1--thumb.webp'}
+									imgBig={'/img/kulinarna/kulinarna-1.webp'}
+									alt={'artystyczne zdjęcie makaronu autorstwa Zuzanna Matyja'}
 								/>
 								<PortfolioGalleryItem
-									imgThumb={'/img/kulinarna-2.jpg'}
-									imgBig={'/img/kulinarna-2.jpg'}
-									alt={'zdjęcie makaronu'}
+									imgThumb={'/img/kulinarna/kulinarna-2--thumb.webp'}
+									imgBig={'/img/kulinarna/kulinarna-2.webp'}
+									alt={'artystyczne zdjęcie fig autorstwa Zuzanna Matyja'}
 								/>
 								<PortfolioGalleryItem
-									imgThumb={'/img/kulinarna-3.jpg'}
-									imgBig={'/img/kulinarna-3.jpg'}
-									alt={'zdjęcie makaronu'}
+									imgThumb={'/img/kulinarna/kulinarna-3--thumb.webp'}
+									imgBig={'/img/kulinarna/kulinarna-3.webp'}
+									alt={'artystyczne zdjęcie makaronu autorstwa Zuzanna Matyja'}
 								/>
 								<PortfolioGalleryItem
-									imgThumb={'/img/kulinarna-4.jpg'}
-									imgBig={'/img/kulinarna-4.jpg'}
-									alt={'zdjęcie makaronu'}
+									imgThumb={'/img/kulinarna/kulinarna-4--thumb.webp'}
+									imgBig={'/img/kulinarna/kulinarna-4.webp'}
+									alt={'artystyczne zdjęcie soku autorstwa Zuzanna Matyja'}
 								/>
 								<PortfolioGalleryItem
-									imgThumb={'/img/kulinarna-4.jpg'}
-									imgBig={'/img/kulinarna-4.jpg'}
-									alt={'zdjęcie makaronu'}
+									imgThumb={'/img/kulinarna/kulinarna-5--thumb.webp'}
+									imgBig={'/img/kulinarna/kulinarna-7.webp'}
+									alt={'artystyczne zdjęcie croissantów autorstwa Zuzanna Matyja'}
 								/>
 								<PortfolioGalleryItem
-									imgThumb={'/img/kulinarna-4.jpg'}
-									imgBig={'/img/kulinarna-4.jpg'}
-									alt={'zdjęcie makaronu'}
+									imgThumb={'/img/kulinarna/kulinarna-6--thumb.webp'}
+									imgBig={'/img/kulinarna/kulinarna-6.webp'}
+									alt={'artystyczne zdjęcie croissantów maczanych w kawie autorstwa Zuzanna Matyja'}
+								/>
+								<PortfolioGalleryItem
+									imgThumb={'/img/kulinarna/kulinarna-7--thumb.webp'}
+									imgBig={'/img/kulinarna/kulinarna-7.webp'}
+									alt={'artystyczne zdjęcie croissantów  autorstwa Zuzanna Matyja'}
+								/>
+								<PortfolioGalleryItem
+									imgThumb={'/img/kulinarna/kulinarna-8--thumb.webp'}
+									imgBig={'/img/kulinarna/kulinarna-8.webp'}
+									alt={'artystyczne zdjęcie jabłek autorstwa Zuzanna Matyja'}
 								/>
 							</>
 						),

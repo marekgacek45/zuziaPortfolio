@@ -13,7 +13,8 @@ module.exports = {
 				max: '1920px',
 			},
 			fontFamily: {
-				secondary: ['Old Standard TT', 'serif'],
+				secondary: ['Prata', 'serif'],
+				third: ['Lora', 'serif'],
 			},
 			colors: {
 				primary: {

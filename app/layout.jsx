@@ -1,10 +1,11 @@
-import { Titillium_Web, Old_Standard_TT } from 'next/font/google'
+import { Montserrat, Prata,Lora } from 'next/font/google'
 
 import './globals.css'
 import Header from './components/Header'
 
-const oldStandard = Old_Standard_TT({ subsets: ['latin'], weight: '400' })
-const titilliumWeb = Titillium_Web({ subsets: ['latin'], weight: '300' })
+const prata = Prata({ subsets: ['latin'], weight: '400' })
+const montserrat = Montserrat({ subsets: ['latin'], weight: '300' })
+const lora = Lora({ subsets: ['latin'], weight: '400' })
 
 export const metadata = {
 	title: 'Zuzanna Matyja - fotografia & wideo',
@@ -15,7 +16,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
 	return (
 		<html lang='pl'>
-			<body className={titilliumWeb.className}>
+			<body className={montserrat.className}>
 				<Header />
 				{children}
 			</body>

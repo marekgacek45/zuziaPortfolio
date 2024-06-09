@@ -19,11 +19,11 @@ export default function Portfolio() {
 					/>
 					<PortfolioItem
 						href={'/portfolio/fotografia/kulinarna'}
-						imgAttributes={{ src: '/img/home.jpg', alt: 'opis', width: '1', height: '1' }}
+						imgAttributes={{ src: '/img/kulinarna/kulinarna-7--thumb.webp', alt: 'opis', width: '1', height: '1' }}
 						title={'Kulinarna'}
 					/>
 					<PortfolioItem
-						href={'/portfoliofotografia//uliczna'}
+						href={'/portfolio/fotografia/uliczna'}
 						imgAttributes={{ src: '/img/home.jpg', alt: 'opis', width: '1', height: '1' }}
 						title={'Uliczna '}
 					/>

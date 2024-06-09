@@ -24,7 +24,7 @@ export default function About() {
 						}}>
 						<h2 className=' heading '>O mnie</h2>
 						<div className='space-y-6 max-w-sm'>
-							<p className='text-2xl '>
+							<p className='text-3xl font-third'>
 								Hej! Mam na imię Zuzanna <br></br>
 							</p>
 							<p>

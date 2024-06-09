@@ -23,7 +23,7 @@ export default function PortfolioGallery({ children, heading, bgi }) {
 			{/* left */}
 
 			<div className='w-full lg:w-1/2 h-[75vh] 2xl:h-[80vh]  relative  lg:sticky lg:top-32  pr-10 2xl:px-0'>
-				<div className="bg-[url('/img/home.jpg')] h-full w-[60%] md:w-[70%] bg-center bg-fixed bg-cover"></div>
+				<div className={`${bgi} h-full w-[60%] md:w-[70%] bg-center bg-fixed bg-contain`}></div>
 				<h2 className='heading--portfolio uppercase absolute top-1/2  transform -translate-y-1/2 right-12 xs:right-16 sm:right-20 lg:right-0'>
 					{children.heading}
 				</h2>
@@ -33,7 +33,9 @@ export default function PortfolioGallery({ children, heading, bgi }) {
 
 			<LightGallery
 				speed={500}
+				getCaptionFromTitleOrAlt={false}
 				plugins={[lgThumbnail, lgZoom]}
+				
 				elementClassNames=' w-full lg:w-3/5 grid grid-cols-1 sm:grid-cols-2 gap-4 h-full px-6 md:px-12 lg:pr-4 lg:mr-6 lg:pl-0 lg:overflow-y-scroll lg:max-h-[700px]'>
 				{children.gallery}
 			</LightGallery>
