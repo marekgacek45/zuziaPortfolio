@@ -23,7 +23,7 @@ export default function PortfolioGallery({ children, heading, bgi }) {
 			{/* left */}
 
 			<div className='w-full lg:w-1/2 h-[75vh] 2xl:h-[80vh]  relative  lg:sticky lg:top-32  pr-10 2xl:px-0'>
-				<div className={`${bgi} h-full w-[60%] md:w-[70%] bg-center bg-fixed bg-contain`}></div>
+				<div className={`${bgi} h-full w-[60%] md:w-[70%] bg-center bg-cover `}></div>
 				<h2 className='heading--portfolio uppercase absolute top-1/2  transform -translate-y-1/2 right-12 xs:right-16 sm:right-20 lg:right-0'>
 					{children.heading}
 				</h2>

@@ -7,8 +7,6 @@ import PortfolioOtherPagesItem from '../../../components/PortfolioOtherPagesItem
 import Footer from '../../../components/Footer'
 
 export default function Culinary() {
-	
-
 	return (
 		<>
 			<main className='main '>
@@ -28,57 +26,75 @@ export default function Culinary() {
 								<PortfolioGalleryItem
 									imgThumb={'/img/kulinarna/kulinarna-1--thumb.webp'}
 									imgBig={'/img/kulinarna/kulinarna-1.webp'}
-									alt={'artystyczne zdjęcie makaronu autorstwa Zuzanna Matyja'}
+									alt={'zdjęcie przedstawiające fotografię kulinarną autorstwa Zuzanna Matyja'}
 								/>
 								<PortfolioGalleryItem
 									imgThumb={'/img/kulinarna/kulinarna-2--thumb.webp'}
 									imgBig={'/img/kulinarna/kulinarna-2.webp'}
-									alt={'artystyczne zdjęcie fig autorstwa Zuzanna Matyja'}
+									alt={'zdjęcie przedstawiające fotografię kulinarną autorstwa Zuzanna Matyja'}
 								/>
 								<PortfolioGalleryItem
 									imgThumb={'/img/kulinarna/kulinarna-3--thumb.webp'}
 									imgBig={'/img/kulinarna/kulinarna-3.webp'}
-									alt={'artystyczne zdjęcie makaronu autorstwa Zuzanna Matyja'}
+									alt={'zdjęcie przedstawiające fotografię kulinarną autorstwa Zuzanna Matyja'}
 								/>
 								<PortfolioGalleryItem
 									imgThumb={'/img/kulinarna/kulinarna-4--thumb.webp'}
 									imgBig={'/img/kulinarna/kulinarna-4.webp'}
-									alt={'artystyczne zdjęcie soku autorstwa Zuzanna Matyja'}
+									alt={'zdjęcie przedstawiające fotografię kulinarną autorstwa Zuzanna Matyja'}
 								/>
 								<PortfolioGalleryItem
 									imgThumb={'/img/kulinarna/kulinarna-5--thumb.webp'}
-									imgBig={'/img/kulinarna/kulinarna-7.webp'}
-									alt={'artystyczne zdjęcie croissantów autorstwa Zuzanna Matyja'}
+									imgBig={'/img/kulinarna/kulinarna-4.webp'}
+									alt={'zdjęcie przedstawiające fotografię kulinarną autorstwa Zuzanna Matyja'}
 								/>
 								<PortfolioGalleryItem
 									imgThumb={'/img/kulinarna/kulinarna-6--thumb.webp'}
 									imgBig={'/img/kulinarna/kulinarna-6.webp'}
-									alt={'artystyczne zdjęcie croissantów maczanych w kawie autorstwa Zuzanna Matyja'}
+									alt={'zdjęcie przedstawiające fotografię kulinarną autorstwa Zuzanna Matyja'}
 								/>
 								<PortfolioGalleryItem
 									imgThumb={'/img/kulinarna/kulinarna-7--thumb.webp'}
 									imgBig={'/img/kulinarna/kulinarna-7.webp'}
-									alt={'artystyczne zdjęcie croissantów  autorstwa Zuzanna Matyja'}
+									alt={'zdjęcie przedstawiające fotografię kulinarną autorstwa Zuzanna Matyja'}
 								/>
 								<PortfolioGalleryItem
 									imgThumb={'/img/kulinarna/kulinarna-8--thumb.webp'}
 									imgBig={'/img/kulinarna/kulinarna-8.webp'}
-									alt={'artystyczne zdjęcie jabłek autorstwa Zuzanna Matyja'}
+									alt={'zdjęcie przedstawiające fotografię kulinarną autorstwa Zuzanna Matyja'}
 								/>
 							</>
 						),
 					}}
 				</PortfolioGallery>
-<PortfolioOtherPages>
-	<PortfolioOtherPagesItem href={'/portfolio/fotografia/produktowa'} src={'/img/home.jpg'} alt={'opis'} title={'Fotografia Produktowa'}/>
-	<PortfolioOtherPagesItem href={'/portfolio/fotografia/uliczna'} src={'/img/home.jpg'} alt={'opis'} title={'Fotografia Uliczna'}/>
-	<PortfolioOtherPagesItem href={'/portfolio/fotografia/reportazowa'} src={'/img/home.jpg'} alt={'opis'} title={'Fotografia Reportażowa'}/>
-	<PortfolioOtherPagesItem href={'/portfolio/fotografia/wizerunkowa'} src={'/img/home.jpg'} alt={'opis'} title={'Fotografia Wizerunkowa'}/>
-</PortfolioOtherPages>
-				
+				<PortfolioOtherPages>
+					<PortfolioOtherPagesItem
+						href={'/portfolio/fotografia/produktowa'}
+						src={'/img/produktowa/produktowa-2--thumb.webp'}
+						alt={'zdjęcie przedstawiające fotografię produktową autorstwa Zuzanna Matyja'}
+						title={'Fotografia Produktowa'}
+					/>
+					<PortfolioOtherPagesItem
+						href={'/portfolio/fotografia/uliczna'}
+						src={'/img/uliczna/uliczna-1--thumb.webp'}
+						alt={'zdjęcie przedstawiające fotografię uliczną autorstwa Zuzanna Matyja'}
+						title={'Fotografia Uliczna'}
+					/>
+					<PortfolioOtherPagesItem
+						href={'/portfolio/fotografia/reportazowa'}
+						src={'/img/reportazowa/reportazowa-5--thumb.webp'}
+						alt={'zdjęcie przedstawiające fotografię reportażową autorstwa Zuzanna Matyja'}
+						title={'Fotografia Reportażowa'}
+					/>
+					<PortfolioOtherPagesItem
+						href={'/portfolio/fotografia/wizerunkowa'}
+						src={'/img/wizerunkowa/wizerunkowa-3--thumb.webp'}
+						alt={'zdjęcie przedstawiające fotografię wizerunkową autorstwa Zuzanna Matyja'}
+						title={'Fotografia Wizerunkowa'}
+					/>
+				</PortfolioOtherPages>
 			</main>
 			<Footer />
 		</>
 	)
 }
-

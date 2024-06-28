@@ -4,6 +4,7 @@ import React, { useState } from 'react'
 import Link from 'next/link'
 import Footer from '../components/Footer'
 
+
 export default function Contact() {
 	const [result, setResult] = useState('')
 	const [sendingForm, setSendingForm] = useState(false)
@@ -41,18 +42,12 @@ export default function Contact() {
 				{/* container */}
 				<div className='flex flex-col lg:flex-row justify-center items-center  gap-8 md:gap-24 lg:gap-0 pt-28 md:pt-32 lg:pt-0  mx-auto'>
 					{/* img */}
-					<div className='w-full lg:w-1/2 5 h-96 md:h-screen order-1 lg:order-none'>
-						<img
-							src='/img/home.jpg'
-							alt='moje zdjęcie'
-							width={1}
-							height={1}
-							className='w-full h-full xl:h-auto object-cover '
-						/>
+					<div className="w-full lg:w-1/2 5 h-96 md:h-screen order-1 lg:order-none bg-[url('/img/zuzanna_matyja-portfolio.webp')] bg-cover bg-center ">
+				
 					</div>
 
 					{/* text */}
-					<div className=' w-full lg:w-1/2  flex justify-center lg:mt-20 px-6 md:px-12 '>
+					<div className=' w-full lg:w-1/2  flex justify-center lg:mt-20 px-6 md:px-12 order-1 lg:order-none'>
 						<div className='flex flex-col justify-center items-center lg:items-start'>
 							<h2 className='heading'>Kontakt</h2>
 							<p className='text-[26px] lg:text-[36px] font-primary mb-4 lg:mb-[12px]'>
