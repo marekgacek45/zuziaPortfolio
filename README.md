@@ -27,11 +27,6 @@ Portfolio website for photographer Zuzanna Matyja
 Project is created with:
 * NextJS
 
-## Sources
-In this project I used:
-* hamburger Icon (https://github.com/jonsuh/hamburgers)
-* slick (https://github.com/kenwheeler/slick)
-
 ## Live
 https://zuzannamatyja.pl
 
