@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Footer from './components/Footer'
 import LinkBtn from './components/LinkBtn'
 // import { motion } from 'framer-motion'
@@ -24,7 +25,7 @@ export default function Home() {
 				{/* img */}
 				<div className='w-full md:w-1/2 2xl:w-2/5 h-96 md:h-screen  px-6 md:px-0'>
 					{/* mobile */}
-					<img
+					<Image
 						src='/img/zuzanna_matyja-home--mobile.webp'
 						alt='Zuzanna Matyja - fotografia i wideo'
 						width={662}
@@ -32,7 +33,7 @@ export default function Home() {
 						className='w-full h-full object-contain  md:object-cover  md:hidden'
 					/>
 					{/* desktop */}
-					<img
+					<Image
 						src='/img/zuzanna_matyja-home.webp'
 						alt='Zuzanna Matyja - fotografia i wideo'
 						width={667}

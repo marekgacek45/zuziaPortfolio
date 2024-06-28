@@ -70,8 +70,9 @@ export default function Contact() {
 								<button
 									type='submit'
 									disabled={sendingForm}
+									aria-label='Wyslij'
 									className={`mt-6 sm:mt-12 xl:mt-6 py-4 px-12 bg-secondary  font-semibold uppercase text-white  duration-500 self-start ${
-										sendingForm ? 'cursor-not-allowed' : 'hover:bg-gray-700'
+										sendingForm ? 'cursor-not-allowed' : 'hover:bg-gray-700' 
 									} `}>
 									Wyślij
 								</button>
