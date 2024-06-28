@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align="center">
+  <img src="https://media4.giphy.com/media/M9kgjEsLG6LMbYC9dl/giphy.gif?cid=ecf05e47lhf5yvp8z16kerd354beyo5e6fxfuk0mftzb1212&rid=giphy.gif&ct=g" width="150"/>
+  <div id="badges">
+  <a href="https://www.linkedin.com/in/marek-gacek">
+    <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
+  </a>
+    <a href="https://m.me/marek.gacek.9465">
+    <img src="https://img.shields.io/badge/Messenger-white?style=for-the-badge&logo=messenger&logoColor=blue" alt="Messenger Badge"/>
+  </a> 
+  </div>
 
-## Getting Started
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+# Restuarant-WebPage
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<div align="left">
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Table of Contents
+* [General info](#general-info)
+* [Technologies](#technologies)
+* [Deploy](#deploy)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## General Info
+Portfolio website for photographer Zuzanna Matyja
 
-## Learn More
+## Technologies
+Project is created with:
+* NextJS
 
-To learn more about Next.js, take a look at the following resources:
+## Sources
+In this project I used:
+* hamburger Icon (https://github.com/jonsuh/hamburgers)
+* slick (https://github.com/kenwheeler/slick)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Live
+https://zuzannamatyja.pl
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+</div>
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
